@@ -30,9 +30,23 @@ const Home = () => {
 
   return (
     <main>
-      <img alt='marketing' src={marketing}></img>
-      <img alt='sales' src={sales}></img>
-      <img alt='time' src={time}></img>
+      <div className="images">
+        <img
+          alt="marketing"
+          style={{ marginRight: "20px" }}
+          src={marketing}
+        ></img>
+        <img
+          alt="sales"
+          style={{ marginRight: "20px" }}
+          src={sales}
+          ></img>
+        <img
+          alt="time"
+          style={{ marginRight: "20px" }}
+          src={time}
+          ></img>
+      </div>
       <div>{renderUsername()}</div>
       <div>{renderUserList()}</div>
     </main>
