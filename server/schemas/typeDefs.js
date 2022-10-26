@@ -32,7 +32,7 @@ const typeDefs = gql`
     me: User
     videos: [Video]
     videoType: [Video]
-    video: Video
+    course: [Video]
   }
 
   type Mutation {
