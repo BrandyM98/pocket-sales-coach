@@ -1,5 +1,5 @@
 const { AuthenticationError } = require('apollo-server-express');
-const { User } = require('../models');
+const { User, Video } = require('../models');
 const { signToken } = require('../utils/auth');
 
 const resolvers = {
@@ -16,6 +16,12 @@ const resolvers = {
       }
       throw new AuthenticationError('You need to be logged in!');
     },
+    videos: async () => {
+      return Video.find();
+    },
+    // videoType: async (_, args) => {
+    //   return Video.find
+    // }
   },
 
   Mutation: {
