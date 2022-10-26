@@ -7,6 +7,7 @@ import { QUERY_USERS } from '../utils/queries';
 // Components
 import UserList from '../components/UserList';
 
+
 const Home = () => {
   const { loading, data } = useQuery(QUERY_USERS);
   const users = data?.users || [];
