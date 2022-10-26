@@ -1,91 +1,41 @@
-import React, { useState } from 'react';
-import { Link } from 'react-router-dom';
-import Auth from '../../utils/auth';
+import Container from 'react-bootstrap/Container';
+import Nav from 'react-bootstrap/Nav';
+import NavDropdown from 'react-bootstrap/NavDropdown';
 import './Navbar.css';
-
-
+import logo from '../../assets/images/Logo.png'
 
 function Navbar() {
-  const [click, setClick] = useState(false);
-  const handleClick = () => setClick(!click);
-  const closeMobileMenu = () => setClick(false);
-  const logout = (event) => {
-    event.preventDefault();
-    Auth.logout();
-  };
-  
-  if (Auth.loggedIn()) {
-    return (
-      <>
-        <Link to="/me">
-          {Auth.getProfile().data.username}'s profile
-        </Link>
-        <button onClick={logout}>
-          Logout
-        </button>
-      </>
-
-
-    );
-  }
-  
-  
-  // If logged out show login controls
   return (
-    <>
-    <nav className='navbar'>
-      <div className='navbar-container'>
-        <Link to='/' className='navbar-logo'>
-         <i className='fa-solid fa-use' />
-        </Link>
-        <div className='fa-solid fa-bars' onClick={handleClick}>
-          <i className={click ? 'fa-solid' : 'fas fa-bas'} />
-        </div>
-        <ul className={click ? 'nav-menu active ' : 'nav-menu'}>
-          
-          <li className='nav-item'>
-            <Link to= '/' className='nav-links' onClick={closeMobileMenu}>
-              Home
-            </Link>
-          </li>
-          
-          <li className='nav-item'>
-            <Link to= '/' className='nav-links' onClick={closeMobileMenu}>
-              Sales
-            </Link>
-        
-        </li>
-
-          <li className='nav-item'>
-            <Link to= '/' className='nav-links' onClick={closeMobileMenu}>
-              Marketing
-            </Link>
-        </li>
-
-        <li className='nav-item'>
-            <Link to= '/' className='nav-links' onClick={closeMobileMenu}>
-              Schedule
-            </Link>
-        </li>
-            
-        <li className='nav-item'>
-            <Link class='nav-links' to="/login" onClick=
-            {closeMobileMenu}>Login</Link>
-        </li>
-
-        <li className='nav-items'>
-      <Link class='nav-links'to="/signup" onClick={closeMobileMenu}>
-        Signup</Link>
-      </li>
-      
-  </ul>
-       
-      </div>
-  </nav>
-      
-      
-    </>
-  )
+    <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark">
+      <Container>
+        <Navbar.Brand href="#home" alt='logo' src={logo}>LOGO</Navbar.Brand>
+        <Navbar.Toggle aria-controls="responsive-navbar-nav" />
+        <Navbar.Collapse id="responsive-navbar-nav">
+          <Nav className="me-auto">
+            <Nav.Link href="#features">Features</Nav.Link>
+            <Nav.Link href="#pricing">Pricing</Nav.Link>
+            <NavDropdown title="Dropdown" id="collasible-nav-dropdown">
+              <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
+              <NavDropdown.Item href="#action/3.2">
+                Another action
+              </NavDropdown.Item>
+              <NavDropdown.Item href="#action/3.3">Something</NavDropdown.Item>
+              <NavDropdown.Divider />
+              <NavDropdown.Item href="#action/3.4">
+                Separated link
+              </NavDropdown.Item>
+            </NavDropdown>
+          </Nav>
+          <Nav>
+            <Nav.Link href="#deets">More deets</Nav.Link>
+            <Nav.Link eventKey={2} href="#memes">
+              Dank memes
+            </Nav.Link>
+          </Nav>
+        </Navbar.Collapse>
+      </Container>
+    </Navbar>
+  );
 }
 
-export default Navbar
+export default Navbar;

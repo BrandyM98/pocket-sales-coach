@@ -9,6 +9,11 @@
   z-index: 999;
 }
 
+#home {
+  justify-content: left;
+  color: orange;
+}
+
 .navbar-container {
   display: flex;
   justify-content: center;
