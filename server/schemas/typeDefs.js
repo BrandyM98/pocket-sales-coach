@@ -24,6 +24,7 @@ const typeDefs = gql`
     name: String
     description: String
     videos: [Video]
+    badge: String
   }
 
   type Query {
@@ -32,9 +33,9 @@ const typeDefs = gql`
     me: User
     videos: [Video]
     video(id: ID!): Video
-  
     courses: [Course]
     course(id: ID!): Course 
+    courseByBadge(badge: String!): Course 
   }
 
   type Mutation {

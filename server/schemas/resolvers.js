@@ -23,11 +23,15 @@ const resolvers = {
 return await Video.findById(args.id)
     },
     courses: async () => {
-      return await Course.find();
+      return await Course.find().populate('videos');
     },
     course: async (_, args) => {
     
       return await Course.findById(args.id).populate('videos');
+    },
+    courseByBadge: async (_, args) => {
+    
+      return await Course.findOne({ badge: args.badge }).populate('videos');
     },
   },
 
