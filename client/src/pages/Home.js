@@ -31,17 +31,17 @@ const Home = () => {
   return (
     <main>
       <div className="images">
-        <img
+        <img width='250'
           alt="marketing"
-          style={{ marginRight: "20px" }}
+          style={{ marginRight: "20px"}}
           src={marketing}
         ></img>
-        <img
+        <img width='250'
           alt="sales"
           style={{ marginRight: "20px" }}
           src={sales}
           ></img>
-        <img
+        <img width='250'
           alt="time"
           style={{ marginRight: "20px" }}
           src={time}
