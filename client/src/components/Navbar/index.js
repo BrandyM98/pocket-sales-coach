@@ -3,7 +3,9 @@ import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import Logo from '../../assets/images/Logo.png';
 import Button from 'react-bootstrap/Button'
+
 import './navbar.css';
+import Login from '../../pages/Login';
 
 function CollapsibleExample() {
   return (
@@ -22,7 +24,7 @@ function CollapsibleExample() {
             <Nav.Link href="#schedule" className='fs-5 text-light'>SCHEDULE.</Nav.Link>
           </Nav>
           <Nav>
-            <Button variant="danger" href="#login" className='btn fs-5'>LOGIN.</Button>
+            <Button to='Login' variant="danger" href="/login" className='btn fs-5'>LOGIN.</Button>
           </Nav>
         </Navbar.Collapse>
       </Container>
