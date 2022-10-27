@@ -8,7 +8,7 @@ const courseSchema = new Schema({
     unique: true,
     trim: true,
   },
-description: {
+  description: {
     type: String,
   },
   videos: [
@@ -16,8 +16,13 @@ description: {
       type: Schema.Types.ObjectId,
       ref: 'Video'
     }
-  ]
-  
+  ],
+  badge: {
+    type: String,
+    required: true,
+    unique: true,
+    trim: true
+  }
 });
 
 
