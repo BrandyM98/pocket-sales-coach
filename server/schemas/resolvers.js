@@ -19,8 +19,15 @@ const resolvers = {
     videos: async () => {
       return await Video.find();
     },
-    course: async () => {
-      return await Course.find({}).populate('videos');
+    video: async(_, args) => {
+return await Video.findById(args.id)
+    },
+    courses: async () => {
+      return await Course.find();
+    },
+    course: async (_, args) => {
+    
+      return await Course.findById(args.id).populate('videos');
     },
   },
 

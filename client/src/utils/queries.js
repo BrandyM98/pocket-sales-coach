@@ -29,3 +29,30 @@ export const QUERY_ME = gql`
     }
   }
 `;
+
+export const QUERY_COURSES = gql`
+query courses {
+  courses {
+    _id
+    name
+    
+  }
+}
+`;
+
+export const QUERY_COURSE = gql`
+query course($courseId: ID!) {
+  course(id: $courseId) {
+    _id
+    description
+    name
+    videos {
+      _id
+      name
+      description
+      url
+
+    }
+  }
+}
+`;

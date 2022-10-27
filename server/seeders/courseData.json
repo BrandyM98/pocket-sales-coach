@@ -1,0 +1,20 @@
+[
+{
+  "name": "Marketing",
+  "description": "sample text",
+  "videos": ["635a66d3312ebdeaba53605d", "635a66d3312ebdeaba53605f"]
+
+},
+{
+  "name": "Sales",
+  "description": "sample text",
+  "videos": ["635a66d3312ebdeaba53605e"]
+
+},
+{
+  "name": "Time Management",
+  "description": "sample text",
+  "videos": []
+
+}
+]
