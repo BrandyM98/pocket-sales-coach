@@ -21,7 +21,7 @@ function CollapsibleExample() {
             <Nav.Link href="#schedule" className='fs-5'>SCHEDULE.</Nav.Link>
           </Nav>
           <Nav>
-            <Button variant="danger" href="#login" className='fs-4'>LOGIN.</Button>
+            <Button variant="danger" href="#login" className='fs-5'>LOGIN.</Button>
           </Nav>
         </Navbar.Collapse>
       </Container>
