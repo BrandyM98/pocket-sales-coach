@@ -4,9 +4,10 @@ html, * {
   box-sizing: border-box;
 }
 
-.images {
+/* .images {
 display: flex;
 justify-content: center;
 padding-top: 200px;
-}
+
+} */
 
