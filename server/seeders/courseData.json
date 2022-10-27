@@ -1,20 +1,24 @@
 [
 {
+  "_id": "635a6f921c253cacc94f1d4c",
   "name": "Marketing",
   "description": "sample text",
   "videos": ["635a66d3312ebdeaba53605d", "635a66d3312ebdeaba53605f"]
 
 },
 {
+  "_id": "635a6f921c253cacc94f1d4d",
   "name": "Sales",
   "description": "sample text",
   "videos": ["635a66d3312ebdeaba53605e"]
 
 },
 {
+  "_id": "635a6f921c253cacc94f1d4e",
   "name": "Time Management",
   "description": "sample text",
   "videos": []
 
 }
+
 ]

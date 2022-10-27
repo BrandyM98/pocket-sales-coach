@@ -1,14 +1,77 @@
 [
   {
-    "name": "Content Marketing",
-    "url": "https://youtu.be/TkskQD1Lt4A"
+    "_id":"",
+    "name": "What Everyone Needs to Know About Content Marketing",
+    "url": "https://www.youtube.com/embed/TkskQD1Lt4A"
   },
   {
-    "name": "Lead generation",
-    "url": "https://youtu.be/Zl2NEKUCZSg"
+    "_id":"",
+    "name": "Become a Lead Generation Machine",
+    "url": "https://www.youtube.com/embed/Zl2NEKUCZSg"
   },
   {
-    "name": "Email Marketing",
-    "url": "https://youtu.be/94gHaHKmD4Q"
+    "_id":"",
+    "name": "Email Marketing for Beginners",
+    "url": "https://www.youtube.com/embed/94gHaHKmD4Q"
+  },
+  {
+    "_id":"",
+    "name": "Fundamentals of Copywriting",
+    "url": "https://www.youtube.com/embed/mWNYE5yVOzk"
+  },
+  {
+    "_id":"",
+    "name": "Understanding Sales Funnels",
+    "url": "https://www.youtube.com/embed/CM-RAMN_mgY"
+  },
+  {
+    "_id":"",
+    "name": "MEDDPICC explained in a 10 Minute Video",
+    "url": "https://www.youtube.com/embed/l4yTE-5R5Zo"
+  },
+  {
+    "_id":"",
+    "name": "Sales Methodologies | Solution selling",
+    "url": "https://www.youtube.com/embed/ALGyCWmkrC8"
+  },
+  {
+    "_id":"",
+    "name": "“Challenger Sale” Mastery!",
+    "url": "https://www.youtube.com/embed/e-pEmiTRhIQ"
+  },
+  {
+    "_id":"",
+    "name": "SALES Is Just Like DATING",
+    "url": "https://www.youtube.com/embed/ywwg-H1otaY"
+  },
+  {
+    "_id":"",
+    "name": "How To Pitch Anything",
+    "url": "https://www.youtube.com/embed/H5XgrQ0pY5A"
+  },
+  {
+    "_id":"",
+    "name": "Manage Your Time More Effectively",
+    "url": "https://www.youtube.com/embed/tlddeUri3GM"
+  },
+  {
+    "_id":"",
+    "name": "10 Time Management Tips",
+    "url": "https://www.youtube.com/embed/iONDebHX9qk"
+  },
+  {
+    "_id":"",
+    "name": "Timeboxing: Elon Musk's Time Management Method",
+    "url": "https://www.youtube.com/embed/fbAYK4KQrso"
+  },
+  {
+    "_id":"",
+    "name": "Time Management Tips by Jim Kwik",
+    "url": "https://www.youtube.com/embed/vL2aMjFS3sI"
+  },
+  {
+    "_id":"",
+    "name": "7 Things Organized People Do (That You Prob Don't Do",
+    "url": "https://www.youtube.com/embed/tlFGOSEI_lo"
   }
 ]
