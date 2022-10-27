@@ -32,7 +32,7 @@ const typeDefs = gql`
     me: User
     videos: [Video]
     video(id: ID!): Video
-    videoType: [Video]
+  
     courses: [Course]
     course(id: ID!): Course 
   }

@@ -21,7 +21,7 @@ const Course = () => {
       height="315" 
       frameBorder="0"
       allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen
-      src={video.url} 
+      src={video.url}
       title={video.name}
        >
       </iframe>
