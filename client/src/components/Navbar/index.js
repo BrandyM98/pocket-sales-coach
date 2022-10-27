@@ -15,15 +15,14 @@ function CollapsibleExample() {
         <Navbar.Toggle aria-controls="responsive-navbar-nav"/>
         <Navbar.Collapse id="responsive-navbar-nav">
 
-          <Nav className="me-auto ">
-            <Nav.Link  href="#sales" className='fs-5'>SALES.</Nav.Link>
-            <Nav.Link  href="#marketing" className='fs-5' >MARKETING.</Nav.Link>
-            <Nav.Link href="#time" className='fs-5'>TIME.</Nav.Link>
-            <Nav.Link href="#schedule" className='fs-5'>SCHEDULE.</Nav.Link>
+          <Nav className="me-auto">
+            <Nav.Link  href="#sales" className='fs-5 text-light'>SALES.</Nav.Link>
+            <Nav.Link  href="#marketing" className='fs-5 text-light' >MARKETING.</Nav.Link>
+            <Nav.Link href="#time" className='fs-5 text-light'>TIME.</Nav.Link>
+            <Nav.Link href="#schedule" className='fs-5 text-light'>SCHEDULE.</Nav.Link>
           </Nav>
           <Nav>
-            <Button variant="danger" href="#login" className='fs-5'>LOGIN.</Button>
-
+            <Button variant="danger" href="#login" className='btn fs-5'>LOGIN.</Button>
           </Nav>
         </Navbar.Collapse>
       </Container>
