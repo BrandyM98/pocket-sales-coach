@@ -8,18 +8,18 @@ function CollapsibleExample() {
     <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark">
       <Container>
         <Navbar.Brand href="#home">
-          <img alt='logo' width='150' src={Logo}/>
+          <img alt='logo' width='125' src={Logo}/>
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="responsive-navbar-nav"/>
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className="me-auto">
-            <Nav.Link href="#sales">SALES.</Nav.Link>
-            <Nav.Link href="#marketing">MARKETING.</Nav.Link>
-            <Nav.Link href="#time">TIME.</Nav.Link>
-            <Nav.Link href="#schedule">SCHEDULE.</Nav.Link>
+            <Nav.Link href="#sales" className="fs-5">SALES.</Nav.Link>
+            <Nav.Link href="#marketing" className="fs-5">MARKETING.</Nav.Link>
+            <Nav.Link href="#time" className="fs-5">TIME.</Nav.Link>
+            <Nav.Link href="#schedule" className="fs-5">SCHEDULE.</Nav.Link>
           </Nav>
           <Nav>
-            <Nav.Link href="#login">LOGIN.</Nav.Link>
+            <Nav.Link href="#login" className="fs-5">LOGIN.</Nav.Link>
           </Nav>
         </Navbar.Collapse>
       </Container>
