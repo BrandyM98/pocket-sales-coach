@@ -4,10 +4,14 @@ html, * {
   box-sizing: border-box;
 }
 
-/* .images {
+.home {
+  min-height: 100vh;
+}
+
+.images {
 display: flex;
 justify-content: center;
 padding-top: 200px;
-
-} */
+padding-bottom: 200px;
+}
 
