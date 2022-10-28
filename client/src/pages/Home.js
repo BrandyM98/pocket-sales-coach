@@ -13,7 +13,6 @@ import sales from "../assets/images/SLS.png";
 import time from "../assets/images/TMG.png";
 import schedule from "../assets/images/SCHED.png";
 
-
 const Home = () => {
   const { loading, data } = useQuery(QUERY_USERS);
   const users = data?.users || [];
@@ -67,13 +66,15 @@ const Home = () => {
             src={time}
           />
         </Link>
-        <img
-          width="250"
-          height="250"
-          alt="time"
-          style={{ marginRight: "20px" }}
-          src={schedule}
-        />
+        <Link to="/coach">
+          <img
+            width="250"
+            height="250"
+            alt="time"
+            style={{ marginRight: "20px" }}
+            src={schedule}
+          />
+        </Link>
       </section>
       {/* <div>
           <Quotes />
