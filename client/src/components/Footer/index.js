@@ -1,5 +1,5 @@
 import React from "react"
-
+import './footer.css'
 const Footer = () => 
 
 <footer className="bg-dark text-light fs-5  p-4">
