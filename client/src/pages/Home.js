@@ -39,6 +39,7 @@ const Home = () => {
         when someone is failing, the tendency is to get on a downward spiral
         that can even become a self-fulfilling prophecy." -- Tony Robbins
       </p>
+      </section>
       <section className="images align-items-center pt-5">
 
         <Link to="/course/635a6f921c253cacc94f1d4c">

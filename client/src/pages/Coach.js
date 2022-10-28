@@ -22,7 +22,7 @@ const Coach = () => {
         <Card.Text >
           {coach.desc}
         </Card.Text>
-        <Button variant="danger">Book Now!</Button>
+        <Button variant="danger" type="submit" target="_blank" href="https://calendly.com/pocket-coach-project/30min">Book Now!</Button>
       </Card.Body>
     </Card>
     ))}
