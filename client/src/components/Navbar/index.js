@@ -3,7 +3,6 @@ import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import Logo from '../../assets/images/Logo.png';
 import Button from 'react-bootstrap/Button'
-import './navbar.css';
 
 
 function CollapsibleExample() {
