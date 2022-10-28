@@ -71,7 +71,7 @@ const Login = () => {
   };
 
   return (
-    <main>
+    <main className='login'>
       <h4>Login</h4>
       <div>
         {renderForm()}
