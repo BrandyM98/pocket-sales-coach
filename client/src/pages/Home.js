@@ -6,7 +6,7 @@ import { Link } from "react-router-dom";
 import Auth from "../utils/auth";
 import { QUERY_USERS } from "../utils/queries";
 // Components
-import UserList from "../components/UserList";
+
 
 import marketing from "../assets/images/MKT.png";
 import sales from "../assets/images/SLS.png";
@@ -15,16 +15,10 @@ import schedule from "../assets/images/SCHED.png";
 
 
 const Home = () => {
-  const { loading, data } = useQuery(QUERY_USERS);
-  const users = data?.users || [];
+  const { data } = useQuery(QUERY_USERS);
+  const user = data?.users || [];
 
-  const renderUserList = () => {
-    if (loading) {
-      return <h2>Loading...</h2>;
-    } else {
-      return <UserList users={users} title="List of Users" />;
-    }
-  };
+
 
   const renderUsername = () => {
     if (!Auth.loggedIn()) return null;
@@ -33,6 +27,12 @@ const Home = () => {
 
   return (
     <main className="homepage">
+
+           <div>
+            <h2 className="ps-5 pt-4"> Welcome {renderUsername()}  </h2>
+            </div>
+      <section className="images align-items-center">
+
       <p className="pt-5 mt-5 text-center">
         "People who succeed have momentum. The more they succeed, the more they
         want to succeed, and the more they find a way to succeed. Similarly,
@@ -40,6 +40,7 @@ const Home = () => {
         that can even become a self-fulfilling prophecy." -- Tony Robbins
       </p>
       <section className="images align-items-center pt-5">
+
         <Link to="/course/635a6f921c253cacc94f1d4c">
           <img
             width="300"
@@ -71,11 +72,8 @@ const Home = () => {
           src={schedule}
         />
       </section>
-      {/* <div>
-          <Quotes />
-        </div> */}
-      <div>{renderUsername()}</div>
-      <div>{renderUserList()}</div>
+
+  
     </main>
   );
 };
