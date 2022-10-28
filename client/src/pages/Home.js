@@ -7,6 +7,7 @@ import Auth from "../utils/auth";
 import { QUERY_USERS } from "../utils/queries";
 // Components
 
+
 import marketing from "../assets/images/MKT.png";
 import sales from "../assets/images/SLS.png";
 import time from "../assets/images/TMG.png";
@@ -27,12 +28,14 @@ const Home = () => {
         <h2 className="ps-5 pt-4">{renderUsername()} </h2>
       </div>
       <p className="text-center pt-5" style={{ paddingRight: "20%", paddingLeft: "20%" }} >
+
         "People who succeed have momentum. The more they succeed, the more they
         want to succeed, and the more they find a way to succeed. Similarly,
         when someone is failing, the tendency is to get on a downward spiral
         that can even become a self-fulfilling prophecy." -- Tony Robbins
       </p>
-      <section className="images align-items-center pt-5">
+
+      <section className="images flex-wrap justify-content-space-between align-items-center text-center pt-5">
         <Link to="/course/635a6f921c253cacc94f1d4c">
           <img
             width="200"
