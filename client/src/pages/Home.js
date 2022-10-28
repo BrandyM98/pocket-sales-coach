@@ -33,7 +33,7 @@ const Home = () => {
 
   return (
     <main className="homepage">
-      <p className="pt-5 mt-5 text-center">
+      <p className="me-auto mt-5 text-center fs-2">
         "People who succeed have momentum. The more they succeed, the more they
         want to succeed, and the more they find a way to succeed. Similarly,
         when someone is failing, the tendency is to get on a downward spiral
@@ -42,7 +42,8 @@ const Home = () => {
       <section className="images align-items-center pt-5">
         <Link to="/course/635a6f921c253cacc94f1d4c">
           <img
-            width="300"
+            width="250"
+            height="250"
             alt="marketing"
             style={{ marginRight: "20px" }}
             src={marketing}
@@ -50,7 +51,8 @@ const Home = () => {
         </Link>
         <Link to="/course/635a6f921c253cacc94f1d4d">
           <img
-            width="300"
+            width="250"
+            height="250"
             alt="sales"
             style={{ marginRight: "20px" }}
             src={sales}
@@ -58,14 +60,16 @@ const Home = () => {
         </Link>
         <Link to="/course/635a6f921c253cacc94f1d4e">
           <img
-            width="300"
+            width="250"
+            height="250"
             alt="time"
             style={{ marginRight: "20px" }}
             src={time}
           />
         </Link>
         <img
-          width="300"
+          width="250"
+          height="250"
           alt="time"
           style={{ marginRight: "20px" }}
           src={schedule}
