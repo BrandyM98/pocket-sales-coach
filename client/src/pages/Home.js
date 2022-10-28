@@ -6,7 +6,7 @@ import { Link } from "react-router-dom";
 import Auth from "../utils/auth";
 import { QUERY_USERS } from "../utils/queries";
 // Components
-
+import '../../src/index.css'
 
 import marketing from "../assets/images/MKT.png";
 import sales from "../assets/images/SLS.png";
@@ -29,9 +29,8 @@ const Home = () => {
     <main className="homepage">
 
            <div>
-            <h2 className="ps-5 pt-4"> Welcome {renderUsername()}  </h2>
+            <h2 className="ps-5 pt-4">  {renderUsername()}  </h2>
             </div>
-      <section className="images align-items-center">
 
       <p className="pt-5 mt-5 text-center">
         "People who succeed have momentum. The more they succeed, the more they
@@ -39,7 +38,7 @@ const Home = () => {
         when someone is failing, the tendency is to get on a downward spiral
         that can even become a self-fulfilling prophecy." -- Tony Robbins
       </p>
-      <section className="images align-items-center pt-5">
+      <section className="images flex-wrap justify-content-space-between align-items-center text-center pt-5">
 
         <Link to="/course/635a6f921c253cacc94f1d4c">
           <img

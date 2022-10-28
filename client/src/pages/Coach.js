@@ -14,7 +14,7 @@ const Coach = () => {
       
       <Card style={{ width: '18rem' }}key={i}>
       <Card.Img variant="top" src={coach.image} />
-      <Card.Body className='d-flex flex-column justify-content-between align-items-center text-center '>
+      <Card.Body className='flex-wrap justify-content-space-between align-items-center text-center '>
         <div>
         <Card.Title>{coach.name}</Card.Title>
         <Card.Subtitle className="mb-2 text-muted">{coach.specialty}</Card.Subtitle>
