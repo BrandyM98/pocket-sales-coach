@@ -6,7 +6,7 @@ import { Link } from 'react-router-dom';
 import Auth from "../utils/auth";
 import { QUERY_USERS } from "../utils/queries";
 // Components
-import UserList from "../components/UserList";
+
 
 import marketing from "../assets/images/MKT.png";
 import sales from "../assets/images/SLS.png";
@@ -15,16 +15,10 @@ import schedule from "../assets/images/SCHED.png";
 
 
 const Home = () => {
-  const { loading, data } = useQuery(QUERY_USERS);
-  const users = data?.users || [];
+  const { data } = useQuery(QUERY_USERS);
+  const user = data?.users || [];
 
-  const renderUserList = () => {
-    if (loading) {
-      return <h2>Loading...</h2>;
-    } else {
-      return <UserList users={users} title="List of Users" />;
-    }
-  };
+
 
   const renderUsername = () => {
     if (!Auth.loggedIn()) return null;
@@ -33,6 +27,9 @@ const Home = () => {
 
   return (
     <main className="homepage">
+           <div>
+            <h2 className="ps-5 pt-4"> Welcome {renderUsername()}  </h2>
+            </div>
       <section className="images align-items-center">
         <Link to="/course/635a6f921c253cacc94f1d4c">
         <img
@@ -65,8 +62,8 @@ const Home = () => {
           src={schedule}
         />
       </section>
-      <div>{renderUsername()}</div>
-      <div>{renderUserList()}</div>
+ 
+      {/* <div>{renderUserList()}</div> */}
     </main>
   );
 };
