@@ -14,6 +14,7 @@ const Course = () => {
     <>
     {loading? <h1>LOADING...</h1> : <>
     <h1>{course.name}</h1>
+    <h3>{course.description}</h3>
     {course.videos.map(video => (
      
       <iframe 
