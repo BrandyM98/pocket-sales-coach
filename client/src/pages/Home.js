@@ -1,6 +1,7 @@
 // Node Modules
 import React from "react";
 import { useQuery } from "@apollo/client";
+import { Link } from 'react-router-dom';
 // Utilities
 import Auth from "../utils/auth";
 import { QUERY_USERS } from "../utils/queries";
@@ -33,30 +34,36 @@ const Home = () => {
   return (
     <main className="homepage">
       <section className="images align-items-center">
-            <img
-              width="250"
-              alt="marketing"
-              style={{ marginRight: "20px" }}
-              src={marketing}
-            />
-            <img
-              width="250"
-              alt="sales"
-              style={{ marginRight: "20px" }}
-              src={sales}
-            />
-            <img
-              width="250"
-              alt="time"
-              style={{ marginRight: "20px" }}
-              src={time}
-            />
-            <img
-              width="250"
-              alt="time"
-              style={{ marginRight: "20px" }}
-              src={schedule}
-            />
+        <Link to="/course/635a6f921c253cacc94f1d4c">
+        <img
+          width="250"
+          alt="marketing"
+          style={{ marginRight: "20px" }}
+          src={marketing}
+        />
+        </Link>
+        <Link to="/course/635a6f921c253cacc94f1d4d">
+        <img
+          width="250"
+          alt="sales"
+          style={{ marginRight: "20px" }}
+          src={sales}
+        />
+        </Link>
+        <Link to="/course/635a6f921c253cacc94f1d4e">
+        <img
+          width="250"
+          alt="time"
+          style={{ marginRight: "20px" }}
+          src={time}
+        />
+        </Link>
+        <img
+          width="250"
+          alt="time"
+          style={{ marginRight: "20px" }}
+          src={schedule}
+        />
       </section>
       <div>{renderUsername()}</div>
       <div>{renderUserList()}</div>

@@ -1,5 +1,5 @@
 const { Schema, model } = require('mongoose');
-const videoSchema = new Schema({
+const coachSchema = new Schema({
 
   name: {
     type: String,
@@ -17,3 +17,5 @@ const videoSchema = new Schema({
     type: String,
   },
 });
+const Coach = model('Coach', coachSchema);
+module.exports = Coach;
