@@ -1,41 +1,32 @@
 import React from 'react'
 
-import coach1 from "../assets/images/Coach1.jpg";
-import coach2 from "../assets/images/Coach2.jpg";
-import coach3 from "../assets/images/Coach3.jpg";
-import coach4 from "../assets/images/Coach4.png";
+import Button from 'react-bootstrap/Button';
+import Card from 'react-bootstrap/Card';
+import CardGroup from 'react-bootstrap/CardGroup';
+import coaches from '../info/coaches';
+
+
 
 const Coach = () => {
   return (
-    <>
-    <div>Coach</div>
-    <section className="images align-items-center">
-    <img
-      width="250"
-      alt="marketing"
-      style={{ marginRight: "20px" }}
-      src={coach1}
-    />
-    <img
-      width="250"
-      alt="sales"
-      style={{ marginRight: "20px" }}
-      src={coach2}
-    />
-    <img
-      width="250"
-      alt="time"
-      style={{ marginRight: "20px" }}
-      src={coach3}
-    />
-    <img
-      width="250"
-      alt="time"
-      style={{ marginRight: "20px" }}
-      src={coach4}
-    />
-</section>
-</>
+    <CardGroup>
+    {coaches.map((coach, i) => (
+      
+      <Card style={{ width: '18rem' }}key={i}>
+      <Card.Img variant="top" src={coach.image} />
+      <Card.Body className='d-flex flex-column justify-content-between align-items-center text-center '>
+        <div>
+        <Card.Title>{coach.name}</Card.Title>
+        <Card.Subtitle className="mb-2 text-muted">{coach.specialty}</Card.Subtitle>
+        </div>
+        <Card.Text >
+          {coach.desc}
+        </Card.Text>
+        <Button variant="danger">Book Now!</Button>
+      </Card.Body>
+    </Card>
+    ))}
+</CardGroup>
   )
 }
 

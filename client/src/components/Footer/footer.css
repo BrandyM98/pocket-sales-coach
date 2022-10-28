@@ -1,11 +1,7 @@
-.footer {
-  min-height: 100vh;
-  display: flex;
-  justify-content: center;
-  gap: 2rem;
-  padding: 1rem;
-  padding-top: 50px;
-  margin-top: 150px;
+footer {
+  bottom: 0;
+  position: fixed;
+  width: 100%;
 }
 
 .footer p {
