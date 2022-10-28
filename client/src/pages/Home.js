@@ -7,10 +7,10 @@ import { QUERY_USERS } from "../utils/queries";
 // Components
 import UserList from "../components/UserList";
 
-import marketing from "../assets/images/Marketing.png";
-import sales from "../assets/images/Sales.png";
-import time from "../assets/images/Time.png";
-import schedule from "../assets/images/Schedule.png";
+import marketing from "../assets/images/MKT.png";
+import sales from "../assets/images/SLS.png";
+import time from "../assets/images/TMG.png";
+import schedule from "../assets/images/SCHED.png";
 
 
 const Home = () => {
