@@ -1,7 +1,7 @@
 import Coach1 from '../assets/images/Coach1.jpg';
 import Coach2 from '../assets/images/Coach2.jpg';
 import Coach3 from '../assets/images/Coach3.jpg';
-import Coach4 from '../assets/images/Coach4.png';
+import Coach4 from '../assets/images/Coach4.jpg';
 
 const coaches = [
   {name: "Wendy Clark", specialty: "Digital Marketing", calender: "https://calendly.com/pocket-coach-project/30min", desc: "After working with some of the world's top marketers, Wendy has successfully launched dozens of startups using digital marketing. Meet with her about social, email or sales funnels.", image: Coach2},
