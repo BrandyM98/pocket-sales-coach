@@ -1,22 +1,19 @@
 [
   {
     "_id": "635a6f921c253cacc94f1d4c",
-    "name": "Marketing",
-    "description": "sample text",
+    "name": "MARKETING.",
     "videos": [],
     "badge": "mkt"
   },
   {
     "_id": "635a6f921c253cacc94f1d4d",
-    "name": "Sales",
-    "description": "sample text",
+    "name": "SALES.",
     "videos": [],
     "badge": "sls"
   },
   {
     "_id": "635a6f921c253cacc94f1d4e",
-    "name": "Time Management",
-    "description": "sample text",
+    "name": "TIME MANAGEMENT.",
     "videos": [],
     "badge": "tmg"
   }

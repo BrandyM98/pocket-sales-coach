@@ -5,6 +5,7 @@ import Logo from '../../assets/images/Logo.png';
 import Button from 'react-bootstrap/Button'
 
 
+
 function CollapsibleExample() {
   return (
     <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark" className='ps-4'>
@@ -20,12 +21,11 @@ function CollapsibleExample() {
         <Navbar.Collapse id="responsive-navbar-nav">
 
 <Container>
-          <Nav className="me-auto">
+          <Nav className="me-auto justify-content-center">
             <Nav.Link  href="/course/635a6f921c253cacc94f1d4d" className='fs-5 text-light'>SALES.</Nav.Link>
             <Nav.Link  href="/course/635a6f921c253cacc94f1d4c" className='fs-5 text-light' >MARKETING.</Nav.Link>
             <Nav.Link href="/course/635a6f921c253cacc94f1d4e" className='fs-5 text-light'>TIME.</Nav.Link>
             <Nav.Link href="/coach" className='fs-5 text-light'>COACHES.</Nav.Link>
-
           </Nav>
       </Container>
           <Nav>
