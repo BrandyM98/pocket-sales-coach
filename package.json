@@ -18,5 +18,8 @@
   },
   "dependencies": {
     "react-router-dom": "^6.4.2"
+  },
+  "engines": {
+    "node": "16.x"
   }
 }
