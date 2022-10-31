@@ -13,10 +13,11 @@
 
 ## Description
 [Deployed Link](!)
+<br>
 Small business owners use this application to equip themselves with outside resources to increase sales. Users access a variety of training videos and coaches in the areas of Sales, Marketing and Time Management. They can request a one on one appointment with a specific coach or post a question to all of the coaches in the "Ask" area of the application.
 
 ## Visuals
-![Screenshot of Pocket Sales Coach Application]()
+![Screenshot of Pocket Sales Coach Application](/client/src/assets/images/Pocket-Sales-Coach-Screenshot.jpg)
 
 
 

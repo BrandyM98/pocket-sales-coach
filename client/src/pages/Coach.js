@@ -21,7 +21,7 @@ const Coach = () => {
                 </Card.Subtitle>
               </div>
               <Card.Text>{coach.desc}</Card.Text>
-              <Button variant="danger" size="lg">
+              <Button variant="danger" size="lg" target='blank' href="https://calendly.com/pocket-coach-project/30min?month=2022-10">
                 Book Now!
               </Button>
             </Card.Body>
@@ -30,11 +30,12 @@ const Coach = () => {
       </CardGroup>
       <Form
         style={{
-          paddingLeft: "55%",
+          paddingLeft: "10%",
           paddingRight: "10%",
           paddingBottom: "10%",
         }}
       >
+      
         <h1 className="text-center fs-2"> ASK A COACH.</h1>
         <Form.Group className="mb-3" controlId="formBasicName">
           <Form.Label>Name</Form.Label>

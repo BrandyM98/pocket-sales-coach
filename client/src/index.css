@@ -12,6 +12,10 @@ html, * {
   min-height: 100vh;
 }
 
+.signup {
+  min-height: 100vh;
+}
+
 
 .images {
 display: flex;
@@ -20,3 +24,6 @@ padding-top: 200px;
 padding-bottom: 200px;
 }
 
+.burger {
+  padding-right: 2px;
+}

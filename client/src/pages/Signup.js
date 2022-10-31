@@ -47,38 +47,46 @@ const Signup = () => {
       )
     } 
     return (
-      <form onSubmit={handleFormSubmit}>
-        <input
+      <><form onSubmit={handleFormSubmit}>
+      <div className='mb-3'>
+        <input style={{width:'50%'}}
           placeholder="Your username"
           name="username"
           type="text"
           value={formState.name}
-          onChange={handleChange}
-        />
-        <input
+          onChange={handleChange} />
+           <br></br>
+      </div>
+      <div className='pt-1'>
+        <input style={{width:'50%'}}
           placeholder="Your email"
           name="email"
           type="email"
           value={formState.email}
-          onChange={handleChange}
-        />
-        <input
+          onChange={handleChange} />
+      </div>
+      <br></br>
+      <div>
+        <input style={{width:'50%'}}
           placeholder="******"
           name="password"
           type="password"
           value={formState.password}
-          onChange={handleChange}
-        />
-        <button type="submit">
-          Submit
+          onChange={handleChange} />
+      </div>
+      <br></br>
+      <div>
+        <button type="submit" className='bg-danger text-white' style={{width:'50%'}}>
+          SUBMIT
         </button>
-      </form>
+      </div>
+      </form><p className='pt-2'>Already have an account?<a href='/login'>Login Here</a></p></>
     );
   };
 
   return (
-    <main>
-      <h4>Sign Up</h4>
+    <main className='signup p-3 m-3 flex-wrap justify-content-space-between align-items-center text-center bg-dark text-white'>
+      <h4 className='p-5 text-align'>SIGN UP</h4>
       <div>
         {renderForm()}
         {error && <div>{error.message}</div>}

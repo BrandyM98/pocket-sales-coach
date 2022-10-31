@@ -13,10 +13,9 @@ const Course = () => {
   return (
     <>
     {loading? <h1>LOADING...</h1> : <>
-    <h1>{course.name}</h1>
-    <h3>{course.description}</h3>
+    <h1 className='text-center pt-4'>{course.name}</h1>
     {course.videos.map(video => (
-     <div key={video._id} className="d-flex p-3 m-3 bg-dark text-white ">
+     <div key={video._id} className="d-flex p-3 m-3 bg-dark text-white">
       <iframe 
       className="m-3 "
       width="560" 
@@ -27,7 +26,7 @@ const Course = () => {
       title={video.name}
        >
       </iframe>
-      <div className="m-3 d-flex flex-column justify-content-center align-items-center ">
+      <div className="m-3 d-flex flex-column justify-content-center align-items-center" style={{width:'100%'}}>
         <h3>{video.name}</h3>
         <p>{video.description}</p>
       </div>
