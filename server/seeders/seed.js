@@ -19,7 +19,7 @@ db.once('open', async () => {
       )
     }
     
-
+console.log('database seeded')
   } catch (err) {
     console.error(err);
     process.exit(1);
