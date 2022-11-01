@@ -16,6 +16,10 @@ html, * {
   min-height: 100vh;
 }
 
+.coach {
+  max-height: 100vh;
+}
+
 
 .images {
 display: flex;
