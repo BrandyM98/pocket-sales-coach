@@ -36,20 +36,20 @@ const Home = () => {
       </p>
 
       <section className="images flex-wrap justify-content-space-between align-items-center text-center pt-5">
-        <Link to="/course/635a6f921c253cacc94f1d4c">
-          <img
-            width="200"
-            alt="marketing"
-            style={{ marginRight: "20px" }}
-            src={marketing}
-          />
-        </Link>
         <Link to="/course/635a6f921c253cacc94f1d4d">
           <img
             width="200"
             alt="sales"
             style={{ marginRight: "20px" }}
             src={sales}
+          />
+        </Link>
+        <Link to="/course/635a6f921c253cacc94f1d4c">
+          <img
+            width="200"
+            alt="marketing"
+            style={{ marginRight: "20px" }}
+            src={marketing}
           />
         </Link>
         <Link to="/course/635a6f921c253cacc94f1d4e">
